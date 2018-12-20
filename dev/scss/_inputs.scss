@@ -1,0 +1,31 @@
+.login-button {
+    font-size: 110%;
+    padding: .5rem 1rem;
+    background-color: #006435;
+    color: white;
+}
+
+label,
+input {
+    display: block;
+    margin: .25rem 0;
+    font-size: 110%;
+}
+
+input {
+    border: 1px solid black;
+    padding: .5rem;
+}
+
+.centred {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.login-input {
+    width: 90%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,32 @@
+body {
+    position: relative;
+}
+
+main {
+    width: 100%;
+    height: 600px;
+    min-height: 600px;
+    padding-top: 50px;
+    background-color: rgba(233, 233, 233, 1);
+}
+
+.centred-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.login-wrapper {
+    width: 400px;
+    max-width: 95vw;
+    border: 2px solid rgba(108, 108, 108, 1);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    padding: 2rem 2rem;
+    text-align: center;
+    background-color: rgba(242, 242, 242, 1);
+}

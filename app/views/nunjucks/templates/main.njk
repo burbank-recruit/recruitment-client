@@ -3,14 +3,26 @@
     <head>
         <meta charset="utf-8">
         <title>{% block page_title %}{% endblock %}</title>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
+        <header>
+            Recruitment Client
+        </header>
+        <main>
+
         {% block body %}
 
 
         {% endblock %}
-        <script src="scripts/main.js"></script>
+        </main>
+
+        <footer>
+            <div class="">
+                <p>Created by Burbank</p>
+            </div>
+        </footer>
+        <script src="/scripts/main.js"></script>
         {% block scripts %}{% endblock %}
     </body>
 </html>
