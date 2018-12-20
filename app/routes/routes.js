@@ -1,6 +1,8 @@
 const downloadFile = require('../middleware/readFileFroms3');
 const callApi = require('../middleware/callApi');
 const uuid = require('uuid/v4');
+const readCookie = require('../middleware/readCookie');
+const sendCookie = require('../middleware/sendCookie');
 
 module.exports = (app) => {
     app.get('/', (req, res) => res.render('index'));
@@ -17,7 +19,9 @@ module.exports = (app) => {
     ]);
 
     app.get('/requester/index', (req, res) => res.render('requester/index'));
-    app.get('/requester/rdt', (req, res) => res.render('requester/rdt'));
+    app.get('/requester/rdt', [
+        readCookie,
+        (req, res) => res.render('requester/rdt')]);
     app.get('/requester/rrf', (req, res) => res.render('requester/rrf'));
     app.get('/requester/success', [
         (req, res, next) => {
@@ -37,6 +41,12 @@ module.exports = (app) => {
 
 
     app.post('/requester/rrf', [
+        sendCookie,
+        callApi,
+        (req, res) => res.redirect('/requester/success')
+    ]);
+
+    app.post('/requester/rdt', [
         callApi,
         (req, res) => res.redirect('/requester/success')
     ]);
