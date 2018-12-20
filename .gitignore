@@ -2,7 +2,6 @@
 node_modules/*
 .jshintrc
 .editorconfig
-.env
 .snyk
 .nyc_output
 .sass-lint.yml
