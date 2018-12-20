@@ -5,7 +5,7 @@ const https = require('https');
 const express = require('express');
 const bootstrap = require('./app/middleware/bootstrap');
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4500;
 const app = express();
 
 bootstrap(app);
