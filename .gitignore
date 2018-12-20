@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/*
+.jshintrc
+.editorconfig
+.env
+.snyk
+.nyc_output
+.sass-lint.yml
+Dockerfile
+.dockerignore
+.scannerwork/*

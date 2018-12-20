@@ -1,0 +1,38 @@
+{
+  "name": "recruitment-client",
+  "version": "0.0.1",
+  "description": "recruitment client for burbank hack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "recruitment",
+    "client",
+    "burbank"
+  ],
+  "author": "Joe Chapman",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "nunjucks": "^3.1.6",
+    "require-dir": "^1.2.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-flatten": "^0.4.0",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "pump": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  }
+}
