@@ -29,3 +29,36 @@ input {
 .form-group {
     margin-bottom: 1rem;
 }
+
+.form-link {
+    display: block;
+    width: 300px;
+    max-width: 95%;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    font-size: 140%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    background-color: #006435;
+    color: white;
+    border: 1px solid darken(#006435, 20%);
+    text-align: center;
+    text-decoration: none;
+}
+
+.form-link:active {
+    box-shadow: 1px 1px 1px black;
+}
+
+.form-link:hover {
+    cursor: pointer;
+}
+
+.pull-button {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    font-size: 120%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}

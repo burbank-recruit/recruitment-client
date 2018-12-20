@@ -1,0 +1,13 @@
+{% extends "nunjucks/templates/main.njk" %}
+
+{% block body %}
+    <div class="centred-wrapper">
+        <div class="login-wrapper">
+          <h1>Yay!</h1>
+          <p>The request for the following user has been approved</p>
+          <p>{{ uuid }}</p>
+          <a href="/requester/index">Go back to index</a>
+        </div>
+        </div>
+    </div>
+{% endblock %}

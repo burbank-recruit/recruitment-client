@@ -16,13 +16,19 @@
   "author": "Joe Chapman",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.380.0",
+    "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
+    "csvtojson": "^2.0.8",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "helmet": "^3.15.0",
     "nunjucks": "^3.1.6",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
     "require-dir": "^1.2.0",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",

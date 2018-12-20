@@ -1,0 +1,32 @@
+{% extends "nunjucks/templates/main.njk" %}
+
+{% block body %}
+    <div class="centred-wrapper">
+        <div class="login-wrapper">
+            <form class="" action="/requester/rrf" method="post">
+        <div class="">
+            <div class="form-group">
+                <label class="strong" for="">Name</label>
+                <input class="centred login-input" type="text" name="name" value="">
+            </div>
+            <div class="form-group">
+                <label class="strong" for="">Job description</label>
+                <input class="centred login-input" type="text" name="jobdescription" value="">
+            </div>
+            <div class="form-group">
+                <label class="strong" for="">Grade</label>
+                <input class="centred login-input" type="text" name="grade" value="">
+            </div>
+            <div class="form-group">
+                <label class="strong" for="">Location</label>
+                <input class="centred login-input" type="text" name="location" value="">
+            </div>
+            <input type="hidden" name="link" value="link" value="https://localhost:4500/test">
+
+            <input class="login-button centred" type="submit" name="submit" value="Send for approval">
+
+        </form>
+    </div>
+        </div>
+    </div>
+{% endblock %}
