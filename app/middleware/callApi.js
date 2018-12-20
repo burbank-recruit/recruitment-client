@@ -1,7 +1,6 @@
 const rp = require('request-promise');
 
 module.exports = (req, res, next) => {
-    console.log(req.body);
     rp.post('http://burbank-recruitment-api.herokuapp.com/intiateRequestApproval', {
         json: true,
         body: req.body
