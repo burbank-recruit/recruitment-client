@@ -10,7 +10,7 @@ const app = express();
 
 bootstrap(app);
 
-if(process.env !== 'local') {
+if(process.env === 'local') {
     const options = {
         key: fs.readFileSync(process.env.KEY_FILE_PATH),
         cert: fs.readFileSync(process.env.CERT_FILE_PATH)
